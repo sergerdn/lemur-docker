@@ -7,7 +7,7 @@ ARG VERSION
 
 ARG URLCONTEXT
 
-COPY lemur/ /opt/lemur
+COPY .lemur/ /opt/lemur
 WORKDIR /opt/lemur
 
 RUN apt-get update && \
