@@ -36,7 +36,8 @@ On command for all things that you need:
 ```bash
 make
 ``` 
-NOTE: make automatically resolves access rights to the docker. If we haven't start containers with `sudo`.
+NOTE: make automatically resolves access rights to the docker. If we haven't start containers with `sudo`.   
+NOTE: make commands tested on Linux and Mac.   
 
 Starting with more control
 --------
