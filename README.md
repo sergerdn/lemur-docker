@@ -40,7 +40,7 @@ make
 Starting with more control
 --------
 
-Check out the lemur repo and make a local copy of the config files:
+Check out the [lemur repo](https://github.com/Netflix/lemur) and make a local copy of the config files:
 
 ```bash
 git clone --depth=1 git@github.com:Netflix/lemur.git lemur-build-docker/.lemur
