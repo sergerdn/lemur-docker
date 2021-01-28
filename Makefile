@@ -21,8 +21,8 @@ all:
 	$(MAKE) start_containers
 
 copy_env_files:
-	[ -d .lemur.env ] || cp .lemur.env.dist .lemur.env && echo ".lemur.env copy from scratch"
-	[ -d .pgsql.env.dist ] || cp .pgsql.env.dist .pgsql.env && echo ".pgsql.env copy from scratch"
+	[ -d .lemur.env ] || cp .lemur.env.dist .lemur.env && echo ".lemur.env created from scratch"
+	[ -d .pgsql.env.dist ] || cp .pgsql.env.dist .pgsql.env && echo ".pgsql.env created from scratch"
 
 lemur_checkout:
 	[ -d $(LEMUR_GIT_DIR) ] || git clone --depth=1 https://github.com/Netflix/lemur.git $(LEMUR_GIT_DIR)
