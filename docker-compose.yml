@@ -28,7 +28,6 @@ services:
   nginx:
     build:
       context: ./nginx
-    container_name: lemur-nginx
     networks:
       - appnet
     volumes:
@@ -44,7 +43,7 @@ services:
     image: netlix-lemur:latest
     build:
       context: ./lemur-build-docker
-    container_name: lemur
+    #container_name: lemur
     restart: on-failure
     networks:
       - appnet

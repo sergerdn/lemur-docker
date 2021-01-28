@@ -12,7 +12,7 @@ LEMUR_GIT_DIR = lemur-build-docker/.lemur
 
 clean:
 	rm -rf $(LEMUR_GIT_DIR)
-	docker-compose down -v
+	docker ps && docker-compose down -v || sudo docker-compose down -v
 
 all:
 	$(MAKE) copy_env_files
@@ -29,7 +29,7 @@ lemur_checkout:
 	cd $(LEMUR_GIT_DIR) && git pull
 
 build_containers:
-	docker-compose build
+	docker ps && docker-compose build || sudo docker-compose build
 
 start_containers:
-	docker-compose up -d
+	docker ps && docker-compose up -d || sudo docker-compose up -d
