@@ -37,7 +37,8 @@ One `magic` command for all things that you need:
 make
 ``` 
 NOTE: make automatically resolves access rights to the docker. If we haven't start containers with `sudo`.   
-NOTE: make commands tested on Linux and Mac. If you have any suggestion how it can be improved for Windows, feel free to make PR.   
+NOTE: make commands tested on Linux and Mac. If you have any suggestion how it can be improved for Windows, feel free to 
+make [PR](https://github.com/Netflix/lemur-docker/pulls).
 
 Starting with more control
 --------
