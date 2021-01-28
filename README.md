@@ -20,8 +20,17 @@ Requirements
 - Latest version of [Docker Compose](https://docs.docker.com/compose/install/) - minimum version 1.27
 - Make (optional)
 
+Prepare
+------------
+
+Check out the current repo:
+```bash
+git clone git@github.com:Netflix/lemur-docker.git
+cd lemur-docker
+```   
+
 Starting
---------
+------------
 
 On command for all things that you need:
 ```bash
@@ -31,11 +40,9 @@ make
 Starting with more control
 --------
 
-Check out the lemur-docker, lemur repos and make a local copy of the config files:
+Check out the lemur repo and make a local copy of the config files:
 
 ```bash
-git clone git@github.com:Netflix/lemur-docker.git
-cd lemur-docker
 git clone git clone --depth=1 git@github.com:Netflix/lemur.git lemur-build-docker/.lemur
 cp .lemur.env.dist .lemur.env
 cp .pgsql.env.dist .pgsql.env
