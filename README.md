@@ -32,7 +32,7 @@ cd lemur-docker
 Starting
 ------------
 
-On command for all things that you need:
+One `magic` command for all things that you need:
 ```bash
 make
 ``` 
